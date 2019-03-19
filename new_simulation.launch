@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <arg name="enable_camera" default="true" />
+  <arg name="world_name" default="tutorial_1"/>
+  <arg name="gui" default="true"/>
+
+
+
+  <!-- TF Transforms -->
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map cf1/odom 100" />
+
+  <node pkg="tf" type="static_transform_publisher" name="baselink_cameralink" args="0.01 0 0.02 0.5 -0.5 0.5 -0.5 cf1/base_link camera_link 10" />
+
+
+
+  <!-- Simulation Lauch -->
+  <include file="$(find dd2419_simulation)/launch/simulation.launch">
+    <arg name="enable_camera" value="$(arg enable_camera)" />
+    <arg name="world_name" value="$(arg world_name)" />
+    <arg name="gui" value="$(arg gui)" />
+  </include>
+
+  <!-- Aruco node -->
+  <include file="$(find dd2419_simulation)/launch/aruco.launch" if="$(arg enable_camera)">
+    <arg name="gui" value="false" />
+  </include>
+
+
+
+<!-- 
+  <node name="aruco_transform" type="../camp_assignment/script/aruco.py" output="screen">
+    <param name="json_file" value="$(find dd2419_resources)/worlds_json/$(arg world_name).world.json"/>
+  </node> -->
+
+  <node pkg="rviz" type="rviz" name="rviz" args="../config/rviz1.rviz" />
+
+
+</launch>
