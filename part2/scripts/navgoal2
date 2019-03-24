@@ -1,0 +1,53 @@
+#!/usr/bin/env python
+
+import math
+import rospy
+from tf.transformations import euler_from_quaternion
+from geometry_msgs.msg import PoseStamped
+from crazyflie_driver.msg import Position
+
+# Current goal (global state)
+goal = None
+
+def goal_callback(msg):
+    global goal
+
+    # RViz's "2D Nav Goal" publishes z=0, so add some altitude if needed.
+    if msg.pose.position.z == 0.0:
+        msg.pose.position.z = 0.4
+
+    rospy.loginfo('New goal set:\n%s', msg)
+    goal = msg
+
+def publish_cmd(goal):
+    cmd = Position()
+
+    cmd.header.stamp = rospy.Time.now()
+    cmd.header.frame_id = goal.header.frame_id
+
+    cmd.x = goal.pose.position.x
+    cmd.y = goal.pose.position.y
+    cmd.z = goal.pose.position.z
+
+    roll, pitch, yaw = euler_from_quaternion((goal.pose.orientation.x,
+                                              goal.pose.orientation.y,
+                                              goal.pose.orientation.z,
+                                              goal.pose.orientation.w))
+
+    cmd.yaw = math.degrees(yaw)
+
+    pub_cmd.publish(cmd)
+
+rospy.init_node('navgoal2')
+sub_goal = rospy.Subscriber('/move_base_simple/goal', PoseStamped, goal_callback)
+pub_cmd  = rospy.Publisher('/cf1/cmd_position', Position, queue_size=2)
+
+def main():
+    rate = rospy.Rate(10)  # Hz
+    while not rospy.is_shutdown():
+        if goal:
+            publish_cmd(goal)
+        rate.sleep()
+
+if __name__ == '__main__':
+    main()
