@@ -14,8 +14,8 @@ most important files :
 * [Final video](#video)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Perception]
-* [Navigation and Localization]
+* [Perception](#perception)
+* [Navigation and Localization] (#navigation_and_localization)
 
 ## Abstract:
 
