@@ -6,20 +6,6 @@
 <details open="open">
 <summary>Table of Contents</summary>
 
- - [About](#about)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-    - [Cookiecutter template](#cookiecutter-template)
-    - [Manual setup](#manual-setup)
-    - [Variables reference](#variables-reference)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-- [Acknowledgements](#acknowledgements) 
-
 - [About](#about)
 - [Final video](#video)
 - [Tools](#tools)
@@ -28,6 +14,15 @@
     -[Data Annotation](#data-annotation)
     -[Training and Evaluation] (#training-and-evaluation)
 - [Navigation and Localization] (#navigation-and-localization)
+
+<!-- - [About](#about)
+- [Final video](#video)
+- [Tools](#tools)
+- [Perception](#perception)
+    -[Data collection and extraction](#data-collection-and-extraction)
+    -[Data Annotation](#data-annotation)
+    -[Training and Evaluation] (#training-and-evaluation)
+- [Navigation and Localization] (#navigation-and-localization) -->
 	
 	
 
