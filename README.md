@@ -3,7 +3,7 @@
 
 
 
-<details open="open">
+<!-- <details open="open"> -->
 <summary>Table of Contents</summary>
 
 - [About](#about)
@@ -26,7 +26,7 @@
 	
 	
 
-</details>
+<!-- </details> -->
 
 ---
 
