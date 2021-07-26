@@ -26,7 +26,7 @@
 - [Perception](#perception)
   -[Data collection and extraction](#data_preparation)
   -[Data Annotation](#data_annotation)
-- [Navigation and Localization] (#navigation_and_localization)
+- [Navigation and Localization] (#navigation)
 	
 	
 
