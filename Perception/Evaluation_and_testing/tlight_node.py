@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# E:\backup_27august_19\dd2419_ws\src\perception\scripts
+
 import sys
 from collections import defaultdict
 import threading
@@ -212,58 +214,3 @@ class TLightNode(object):
     def callbackImage(self, event):
         if self.img_out is None:
             return   
-
-        self.pub.publish(self.bridge.cv2_to_imgmsg(self.img_out, "bgr8"))
-
-    #center = np.array([(box['bottomright']['x']+box['topleft']['x'])/2,(box['topleft']['y']+box['topleft']['y'])/2])
-                #f = 1 / math.sqrt(rvecs[0] * rvecs[0]+ rvecs[1] * rvecs[1] + rvecs[2] * rvecs[2])
-            
-
-              #231    84  128
-
-                #draw boxes
-                #taking a step back
-                # cv2.rectangle(self.img_out,(box['topleft']['x']-pad, 
-                #                             box['topleft']['y']-pad), 
-                #                             (box['bottomright']['x']+pad, 
-                #                             box['bottomright']['y']+pad), 
-                #                             (255,0,0), 3)
-
-
-  # self.crop_img = canny[box['topleft']['y']-pad:box['bottomright']['y']+pad,box['topleft']['x']-pad:box['bottomright']['x']+pad]
-                # originalImage = self.img_out[box['topleft']['y']-pad:box['bottomright']['y']+pad,box['topleft']['x']-pad:box['bottomright']['x']+pad]
-
-                # _, contours, _ = cv2.findContours(self.crop_img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                
-
-                # min_sign_area = 10
-                # large_contours = [cnt for cnt in contours if cv2.contourArea(cnt) > min_sign_area]
-
-                # for contour in large_contours:
-                #   x, y, w, h = cv2.boundingRect(contour)
-                #   #print("stop sign: ",x,y)
-                #   cv2.rectangle(self.crop_img, (x, y), (x + w, y + h), (0, 255, 0), 3)
-
-                # # cv2.drawContours(cv_image, large_contours, -1, (255,0,0))
-
-                # originalImage[:,:,0] = self.crop_img               
-                # originalImage[:,:,1] = self.crop_img 
-                # originalImage[:,:,2] = self.crop_img 
-               
-
-                # self.pubCropImage.publish(self.bridge.cv2_to_imgmsg(originalImage, "bgr8"))
-
-              
-
-#                 dronePose=self.pose
-#                 trans.header.frame_id = 'map'
-#                 trans.child_frame_id = box['label']
-#                 #counter[sign] += 1
-#                 trans.transform.translation.x = dronePose.pose.position.x + tvecs[0]
-#                 trans.transform.translation.y = dronePose.pose.position.y + tvecs[1]
-#                 trans.transform.translation.z = dronePose.pose.position.z + tvecs[2]
-#                 trans.transform.rotation.x = rvecs[0]*f
-#                 trans.transform.rotation.y = rvecs[1]*f
-#                 trans.transform.rotation.z = rvecs[2]*f
-#                 trans.transform.rotation.w = 0
-#                 
