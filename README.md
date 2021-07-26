@@ -1,4 +1,4 @@
-# Drone_Autonomous_Navigation_Perception_Motion_planning
+# Drone_Autonomous_Navigation_Perception_Localization
 
 ![alt text](https://github.com/neilpradhan/Drone_Autonomous_Navigation_Perception_Motion_planning/blob/test_branch/images/CFwithCam.jpg)
 ---
