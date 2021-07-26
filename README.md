@@ -24,6 +24,8 @@
 - [Final video](#video)
 - [Tools](#tools)
 - [Perception](#perception)
+	-[Data collection and extraction](#data_preparation)
+	-[Data Annotation](#data_annotation)
 - [Navigation and Localization] (#navigation_and_localization)
 	
 	
@@ -45,7 +47,7 @@ In this project, a research purpose drone consists of the following sensors: cam
 Project is created with:
 * Python 3, C++
 * ROS Kinetic
-*  Machine learning and Deep learning libraries
+* Machine learning and Deep learning libraries
 * Computer vision libraries
 * CMAKE
 
