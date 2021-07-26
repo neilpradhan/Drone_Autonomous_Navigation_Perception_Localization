@@ -63,7 +63,6 @@ The drone camera is moved over the traffic sings and data is collected using ROS
 Open source software YAT is used for data annotation and ground truth labelling
 
 ### Training and Evaluation
-![alt text]()
 YOLO V2 is used for training and later evaluation is done to see if the pose\DEPTH estimation is within 1 metre of error according to the requirement. Further optimization resuls in pose estimation error less than 0.3 m
 
 ## Navigation and Localization
