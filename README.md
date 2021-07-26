@@ -34,7 +34,7 @@
 
 ## About:
 
-To see the complete report: [2D pose graph Slam Project report](https://github.com/neilpradhan/2d_pose_graph_SLAM/blob/master/Applied_Estimation_Graph_Slam_Project_Report.pdf)
+<!-- To see the complete report: [2D pose graph Slam Project report](https://github.com/neilpradhan/2d_pose_graph_SLAM/blob/master/Applied_Estimation_Graph_Slam_Project_Report.pdf) -->
 	
 ## Final video
 
