@@ -24,8 +24,8 @@
 - [Final video](#video)
 - [Tools](#tools)
 - [Perception](#perception)
-	-[Data collection and extraction](#data_preparation)
-	-[Data Annotation](#data_annotation)
+  -[Data collection and extraction](#data_preparation)
+  -[Data Annotation](#data_annotation)
 - [Navigation and Localization] (#navigation_and_localization)
 	
 	
