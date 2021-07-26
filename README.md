@@ -9,7 +9,7 @@
 - [About](#about)
 - [Final video](#video)
 - [Tools](#tools)
-- [Perception Deep Learning](#perception-deep-learning)
+- [Perception](#perception)
   - [Data collection and Extraction](#data-collection-and-extraction)
   - [Data Annotation](#data-annotation)
   - [Training and Evaluation](#training-and-evaluation)
