@@ -53,7 +53,7 @@ Project is created with:
 * CMAKE
 
 ## Perception
-![alt text]()
+![alt text](https://github.com/neilpradhan/Drone_Autonomous_Navigation_Perception_Motion_planning/blob/test_branch/images/yolo_snap.PNG)
 In this task we have to use the drone camera inorder to detect traffic sings all over the map and  estimate in real time their distances (poses) from the drone. Real time object detection and pose estimation using camera parameters and drone localization information from aruco-marker detection.
 
 ### Data collection and extraction
