@@ -5,7 +5,7 @@
 
 <details open="open">
 <summary>Table of Contents</summary>
-<!-- 
+
  - [About](#about)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
@@ -18,7 +18,7 @@
 - [Contributing](#contributing)
 - [Support](#support)
 - [License](#license)
-- [Acknowledgements](#acknowledgements) -->
+- [Acknowledgements](#acknowledgements) 
 
  - [About](#about)
  - [Final video](#video)
