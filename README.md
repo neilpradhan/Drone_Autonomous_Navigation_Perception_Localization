@@ -1,4 +1,4 @@
-# robotics_and_autonomous_project_course
+# Drone_Autonomous_Navigation_Perception_Motion_planning
 dd2419 project course on drones
 
 most important files :
