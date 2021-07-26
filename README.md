@@ -10,9 +10,9 @@
 - [Final video](#video)
 - [Tools](#tools)
 - [Perception](#perception)
-    -[Data collection and extraction](#data-collection-and-extraction)
-    -[Data Annotation](#data-annotation)
-    -[Training and Evaluation] (#training-and-evaluation)
+  -[Data collection and extraction](#data-collection-and-extraction)
+  -[Data Annotation](#data-annotation)
+  -[Training and Evaluation] (#training-and-evaluation)
 - [Navigation and Localization] (#navigation-and-localization)
 
 <!-- - [About](#about)
