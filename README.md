@@ -55,6 +55,11 @@ Project is created with:
 * CMAKE
 
 ## Perception
+In this task we have to use the drone camera inorder to detect traffic sings all over the map and  estimate in real time their distances (poses) from the drone. Real time object detection and pose estimation using camera parameters and drone localization information from aruco-marker detection.
+
+### Data collection and extraction
+The data is collected as a rosbag files from which we get the videos initially and later collect and save the frames.
+
 
 ## Navigation and Localization
 
