@@ -53,6 +53,7 @@ Project is created with:
 * CMAKE
 
 ## Perception
+![alt text]()
 In this task we have to use the drone camera inorder to detect traffic sings all over the map and  estimate in real time their distances (poses) from the drone. Real time object detection and pose estimation using camera parameters and drone localization information from aruco-marker detection.
 
 ### Data collection and extraction
@@ -62,8 +63,11 @@ The drone camera is moved over the traffic sings and data is collected using ROS
 Open source software YAT is used for data annotation and ground truth labelling
 
 ### Training and Evaluation
+![alt text]()
 YOLO V2 is used for training and later evaluation is done to see if the pose\DEPTH estimation is within 1 metre of error according to the requirement. Further optimization resuls in pose estimation error less than 0.3 m
 
 ## Navigation and Localization
+![alt text]()
+![alt text]()
 In this part, we have written scripts to take the map cordinates and obstacle co-ordinates and plan the path using A- star Graph theory methods. For the localization sevral techniques were used to find the best transform, which has the most minimum error.For motion planning approximate errors occured due to localization were compensated
 
