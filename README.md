@@ -66,7 +66,7 @@ Open source software YAT is used for data annotation and ground truth labelling
 YOLO V2 is used for training and later evaluation is done to see if the pose\DEPTH estimation is within 1 metre of error according to the requirement. Further optimization resuls in pose estimation error less than 0.3 m
 
 ## Navigation and Localization
-![alt text](https://github.com/neilpradhan/Drone_Autonomous_Navigation_Perception_Motion_planning/blob/test_branch/images/final_path.png)
+![alt text](https://github.com/neilpradhan/Drone_Autonomous_Navigation_Perception_Motion_planning/blob/test_branch/images/Image%20from%20iOS.jpg)
 ![alt text](https://github.com/neilpradhan/Drone_Autonomous_Navigation_Perception_Motion_planning/blob/test_branch/images/final_path.png)
 In this part, we have written scripts to take the map cordinates and obstacle co-ordinates and plan the path using A- star Graph theory methods. For the localization sevral techniques were used to find the best transform, which has the most minimum error.For motion planning approximate errors occured due to localization were compensated
 
