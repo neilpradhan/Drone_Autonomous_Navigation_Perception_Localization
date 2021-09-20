@@ -118,7 +118,7 @@ class TLightNode(object):
                            box['topleft']['y'] - 12), 0, 0.6, (255,0,0) ,6//3)
           
                
-#DEPTH###############################################################################################################33               
+#POSE ESTIMATION ###############################################################################################################33               
 
                 #clockwise from top left top right  bottom right and finally bottom left
                 c1=np.array([box['topleft']['x'],box['topleft']['y']],dtype='f')
@@ -199,7 +199,7 @@ class TLightNode(object):
             stb.sendTransform(self.L)
             for item in self.L:
                 self.poseFile.write("%s\n" % item)
-#DEPTH###############################################################################################################33               
+#POSE ESTIMATION ###############################################################################################################33               
                         
     
             self.image_lock.release()
